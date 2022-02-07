@@ -1,0 +1,12 @@
+[Bb]in
+[Bb]uild
+[Oo]ut
+[Oo]bj
+[Dd]ist
+[Ll]og
+[Ll]ogs
+.vscode
+.vs
+__pycache__
+*.pyc
+*.user
