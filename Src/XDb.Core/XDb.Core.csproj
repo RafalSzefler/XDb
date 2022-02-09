@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="$(MSBuildThisFileDirectory)..\XDb.targets" />
+
+  <PropertyGroup>
+    <Version>1.0.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\XDb.Abstractions\XDb.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

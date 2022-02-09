@@ -1,0 +1,25 @@
+<Project>
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <OutputType>Library</OutputType>
+        <LangVersion>10.0</LangVersion>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <WarningsAsErrors />
+        <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)\analyzers.ruleset</CodeAnalysisRuleSet>
+        <Authors>Rafal Szefler</Authors>
+    </PropertyGroup>
+
+    <!-- code analyzers -->
+    <ItemGroup>
+      <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" ReferenceOutputAssembly="false">
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+          <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+
+      <AdditionalFiles Include="$(MSBuildThisFileDirectory)\stylecop.json" />
+    </ItemGroup>
+
+</Project>
